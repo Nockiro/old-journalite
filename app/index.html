@@ -1,0 +1,57 @@
+<!doctype html>
+<html ng-app="journalite">
+  <head>
+    <title>Journalite</title>
+    <!-- build:css css/all.css -->
+    <!-- Styles: Libraries -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-accessibility.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/notosans-font.css">
+    <link rel="stylesheet" href="css/sir-trevor.css">
+    <link rel="stylesheet" href="css/sir-trevor-icons.css">
+    <link rel="stylesheet" href="css/pikaday.css">
+    <!-- Styles: App -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Styles: Views -->
+    <link rel="stylesheet" href="css/views/cover-colors.css">
+    <link rel="stylesheet" href="css/views/journals.css">
+    <link rel="stylesheet" href="css/views/entries.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div ng-controller="UpdateCtrl">
+      <div ng-cloak ng-if="hasUpdate">
+        <div class="alert alert-update">
+          <b>Update available.</b> Please download the new version.
+          <button class="pull-right btn btn-danger" style="margin-top: -6px" ng-click="downloadUpdate()">Download Update</button>
+        </div>
+        <div class="alert-update-after"></div>
+      </div>
+    </div>
+    <div id="container" ng-view></div>
+  </body>
+  <!-- build:js js/all.js -->
+  <!-- Scripts: Libraries -->
+  <script src="lib/jquery.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="lib/moment-with-langs.js"></script>
+  <script src="lib/pikaday.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="lib/bootstrap-accessibility.js"></script>
+  <script src="lib/bootbox.js"></script>
+  <script src="lib/underscore.js"></script>
+  <script src="lib/eventable.js"></script>
+  <script src="lib/sir-trevor.js"></script>
+
+  <!-- Scripts: Application -->
+  <!-- Replace SirTrevor's image block -->
+  <script src="scripts/sir-trevor-block-local-image.js"></script>
+  <!-- Directives -->
+  <script src="scripts/directives.js"></script>
+  <!-- Main -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild -->
+
+</html>

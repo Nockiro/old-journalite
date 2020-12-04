@@ -1,0 +1,7 @@
+app/scripts/views/.module-cache/*
+.lock.pid
+node_modules
+wininst/*.exe
+/dist
+/.tmp
+/tmp

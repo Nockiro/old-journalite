@@ -1,0 +1,30 @@
+<div class="entries-view">
+  <div class="entries-view-sidebar-container cover-color-{{journal.coverColor || 'default' }}">
+    <div class="entries-view-sidebar">
+      <div class="entries-view-calendar">
+        <cr-calendar
+        selected-moment="selectedMoment"
+        visible-moment="visibleMoment"
+        entry-counts="monthEntryCounts">
+        </cr-calendar>
+      </div>
+      <div class="entries-view-sidebar-footer">
+        <!--
+        <div class="pull-right">
+          <i class="fa fa-2x fa-spinner fa-spin"></i>
+        </div>
+        -->
+        <ul class="list-inline">
+          <li>
+            <button ng-click="goToJournals()" class="btn btn-transparent">
+              <i class="fa fa-arrow-left"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="entries-view-content">
+    <cr-sir-trevor content="editorContent" bus="editorBus"></cr-sir-trevor>
+  </div>
+</div>

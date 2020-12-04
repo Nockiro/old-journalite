@@ -1,0 +1,14 @@
+/* Cover colors */
+
+.cover-color-default { background-color: #F6F6F6 } /* white */
+.cover-color-red     { background-color: #FF6D6B }
+.cover-color-blue    { background-color: #5AB2FF }
+.cover-color-green   { background-color: #4ACF73 }
+.cover-color-orange  { background-color: #FFAE52 }
+.cover-color-yellow  { background-color: #F7D342 }
+.cover-color-teal    { background-color: #7BDBD6 }
+.cover-color-maroon  { background-color: #F759A5 }
+.cover-color-purple  { background-color: #C68AFF }
+.cover-color-fuchsia { background-color: #F79AD6 }
+.cover-color-silver  { background-color: #AAAAAA }
+.cover-color-black   { background-color: #333333 }

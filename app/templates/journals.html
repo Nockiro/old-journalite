@@ -1,0 +1,66 @@
+<div class="journals-view">
+  <div class="row">
+
+    <div class="col-sm-4 col-xs-6" ng-repeat="journal in journals | orderBy: 'order'">
+
+      <div ng-if="!isEditing(journal)" class="journal-thumb display cover-color-{{journal.coverColor || 'default' }}">
+        <a href="#/journals/{{journal.uid}}" ondragstart="return false">
+          <div class="cover">
+            <img ng-show="journal.coverImage" ng-src="{{journal.coverImage}}">
+          </div>
+          <div class="caption">
+            <h4 ng-bind="journal.title || 'Untitled' "></h4>
+          </div>
+        </a>
+        <div class="buttons">
+          <button ng-click="edit(journal)" class="btn btn-default edit"><i class="fa fa-pencil"></i></button>
+        </div>
+      </div>
+
+      <div ng-if="isEditing(journal)" class="journal-thumb editing cover-color-{{journal.coverColor || 'default' }}">
+        <!--
+        <div class="cover">
+          <img ng-show="journal.coverImage" ng-src="{{journal.coverImage}}">
+        </div>
+        -->
+        <div class="cover">
+          <div class="row">
+            <div class="col-xs-3" ng-repeat="color in $parent.coverColors">
+              <button
+                class="btn cover-thumb cover-color-{{color}}"
+                ng-class="{selected: color == ($parent.journal.coverColor || 'default')}"
+                ng-click="$parent.journal.coverColor = color"
+              >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="caption">
+          <h4>
+            <form ng-submit="save(journal)">
+              <input
+              type="text"
+              class="form-control text-center editor"
+              placeholder="Untitled"
+              autofocus
+              ng-model="journal.title"
+              />
+            </form>
+          </h4>
+        </div>
+        <div class="buttons">
+          <button ng-click="remove(journal)" class="btn btn-danger remove"><i class="fa fa-trash-o"></i> Delete</button>
+          <button ng-click="save(journal)" class="btn btn-primary save"><i class="fa fa-check"></i></button>
+        </div>
+      </div>
+
+    </div><!--/.col-->
+
+    <div class="col-sm-4 col-xs-6">
+      <div class="journal-thumb-new" ng-click="create()">
+        <h4><i class="fa fa-5x fa-plus"></i></h4>
+      </div>
+    </div>
+
+  </div><!--/.row-->
+</div><!--/.journals-view-->

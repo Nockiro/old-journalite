@@ -1,0 +1,21 @@
+{
+  "name": "Journalite",
+  "version": "0.9.0",
+  "main": "index.html",
+  "window": {
+    "title": "Journalite",
+    "toolbar": true,
+    "icon": "img/icon-16.png",
+    "frame": true
+  },
+  "dependencies": {
+    "mkdirp": "*",
+    "rimraf": "~2.2.6"
+  },
+  "update": {
+    "url": "http://www.example.com/update.json",
+    "signatureURL": "http://www.example.com/update.json.dsa",
+    "defaultDownloadURL": "http://www.example.com/journalite/",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIDRzCCAjoGByqGSM44BAEwggItAoIBAQDh8D3Vb7+cV7uoWAQauGvzfCxjpgjj\nP8YZONYRqh3Vt0IrS7YTOlXXqsRybP3bQE9lpc3G0MzBmd+eRxK4NdkQT4w79ucY\n9e4NEyrvIwFg4JqGZHiUvRkXbjkAdzdUuOrcpN5HPs1u8crqZ06kE7JNnR0X7/TL\nM/xrg9+el2mg6Z/KnO6fJ/EfKNO91ru1I5JxYG/+Y+lxUgLcRQbh7sOAxuTuqPcd\nqyaAq6/HIa49g7hkC+doZbJ332ut02XrHI9xpqjh+Io5UZat8eOhqzxZjcqC5xWH\nsAUO7TcT+mrT2ZHu3GEM2VqoyqTcVWCKSECD6TZ6veEUwWCqvqWw7fFzAiEAkw/a\nIHp/AC3HbG7Q9DRrendgP/Kj6fgaxz7ctACz+DsCggEBALfyfcrlpmR1t07b+Yvo\nki5YNDn2NliAPMyDLST7taRn23EWLA/+hup4IYE0kNbxLRcs4lppQmNYq5Az5WXB\nrUP4mCFKkGg0lrOVl2bqL5us5NBj3hX72VhdyfHrqrALkZuRJ00XCBY/YTJZX7Bg\nzxtpMcbwPozj9ZSeVcrjeBxoV75CNotMfUU3xKjlXWWcvRI6ntgNBE6h32+h0+QW\nonzfWA/qP7oWbViZDGsTj4MYidVSdmE/360mPSPHZu9nFTrHAk5jIzFstrwh0ayu\nsZF55PMbnuhGSbbk/uslFuySO6xmhYbseceF2/kb4jc2B60JezWAq0u2Z1w8MKz+\n1ZMDggEFAAKCAQB/nQr7ZGgDVH2gEg3iOluvfsvodqwZD32ZS2sYe2+XzRWlZkiS\n0fSoTacq7Zc5S3qvKEzID0mtnravw1RYSzA9BUhsWsAIT3fbdsSnslYrrmBzoXyy\nPgpSZ6mAxHUOsbCaRDkkTGRUqIl56VTPNQ1WUpDRcsHXQgZHx6XY8io+pez4im45\nPgS0eaZ5ZRZQxa9AlETpcDt1sf1k3gnpGL7Zhbo86Ee1rY3jcNwXwH+AzXEZP6XP\neT/OJpVZ5cG28X8ufAK8W3DKolhcEZ943ByzjC1GVzvt7RTMnOX66uxfRuS6wPhO\nrm/sPg4W2jRNo1BZiIuVa9SVSnPhwZH/na4e\n-----END PUBLIC KEY-----"
+  }
+}
